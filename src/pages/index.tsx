@@ -21,7 +21,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className='bg-white p-2 dark:bg-black'>
+      <main className='bg-white p-1 dark:bg-black'>
+
+        {/* ******************* Header ********************* */}
         <section className="bg-blue-200 min-h-screen dark:bg-gray-900">
           <nav className='p-10 mb-12 flex justify-between'>
             <h1 className='text-xl font-burtons dark:text-gray-300'>{'{Developed by Akshat}'}</h1>
@@ -30,7 +32,8 @@ export default function Home() {
                 <li><BsFillSunFill className='cursor-pointer text-2xl text-cyan-50' onClick={()=>setDarkMode(!darkMode)} /></li>
               :
                 <li><BsFillMoonStarsFill className='cursor-pointer text-2xl' onClick={()=>setDarkMode(!darkMode)} /></li>
-              }<li>
+              }
+              <li className='hover:scale-110 transition-all'>
                 <a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href={"/Resume_2.pdf"} target="_blank">Resume</a>
               </li>
             </ul>
@@ -40,27 +43,34 @@ export default function Home() {
             <h3 className='text-2xl py-4 dark:text-gray-300'>Software Developer</h3>
             <p className='text-lg py-4 leading-8 text-gray-800 dark:text-gray-400'>I'm a curious software developer with a strong passion for the field. I love exploring and creating!</p>
           </div>
+
+
+        {/* ******************* Links ********************* */}
           <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
-            <a href="https://github.com/aksh4t-w" target="_blank"><AiFillGithub/></a>
-            <a href="https://www.linkedin.com/in/akshat-w/" target="_blank"><AiFillLinkedin/></a>
-            <a href="https://www.youtube.com/channel/UCRCtuNqoxPBYqOgwb4rPSXw" target="_blank"><AiFillYoutube/></a>
-            <a href="https://www.instagram.com/akshat.w/" target="_blank"><AiFillInstagram/></a>
+            <a className="hover:scale-150 transition-all" href="https://github.com/aksh4t-w" target="_blank"><AiFillGithub/></a>
+            <a className="hover:scale-150 transition-all" href="https://www.linkedin.com/in/akshat-w/" target="_blank"><AiFillLinkedin/></a>
+            <a className="hover:scale-150 transition-all" href="https://www.youtube.com/channel/UCRCtuNqoxPBYqOgwb4rPSXw" target="_blank"><AiFillYoutube/></a>
+            <a className="hover:scale-150 transition-all" href="https://www.instagram.com/akshat.w/" target="_blank"><AiFillInstagram/></a>
           </div>
           <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden'>
             <Image src={avatar} alt="3D avatar of the author" fill objectFit="cover"/>
           </div>
         </section>
 
-        <section className=''>
+        {/* ******************* Projects ********************* */}
+        <section className='mt-5'>
           {/* <h3 className='text-3xl py-1'></h3> */}
-          <div className='lg:flex flex-wrap gap-10 justify-center'>
+          <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Some of my projects</h2>
+          <div className='lg:flex flex-wrap gap-10 justify-center w-4/6 m-auto'>
             {projects.map((project) => (
               <Card project = {project}/>
             ))}
           </div>
         </section>
+        
+        {/* ******************* Contact ********************* */}
+        <Contact />
       </main>
-      <Contact />
     </div>
   )
 }
