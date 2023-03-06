@@ -49,30 +49,69 @@ export const projects: Project[] = [
     },
   ];
   
-  export const skills = [
+  export interface Skill {
+    name: string;
+    img_path: string;
+  }
+
+  export const skills: Skill[] = [
     {
-      name: "ReactJs",
-      level: "90%",
+      name: "NodeJS",
+      img_path: "/icons/node.png",
+    },
+    {
+      name: "ReactJS",
+      img_path: "/icons/react.png",
     },
     {
       name: "HTML5",
-      level: "80%",
+      img_path: "/icons/html.png",
     },
     {
-      name: "CSS",
-      level: "80%",
+      name: "CSS3",
+      img_path: "/icons/css.png",
+    },
+    {
+      name: "Tailwind",
+      img_path: "/icons/tailwind.png",
+    },
+    {
+      name: "JS",
+      img_path: "/icons/js.png",
+    },
+    {
+      name: "TS",
+      img_path: "/icons/ts.png",
+    },
+    {
+      name: "Python",
+      img_path: "/icons/python.png",
     },
     {
       name: "Git",
-      level: "60%",
+      img_path: "/icons/git.png",
+    },
+    {
+      name: "MySQL",
+      img_path: "/icons/mysql.png",
     },
     {
       name: "MongoDB",
-      level: "60%",
+      img_path: "/icons/mongo.png",
     },
     {
-      name: "Python / ML",
-      level: "80%",
+      name: "AWS",
+      img_path: "/icons/aws.png",
     },
+    {
+      name: "Scala",
+      img_path: "/icons/scala.png",
+    },
+    {
+      name: "Java",
+      img_path: "/icons/java.png",
+    },
+
+
   ];
   

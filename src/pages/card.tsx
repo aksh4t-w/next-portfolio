@@ -1,11 +1,10 @@
 import { useState } from 'react'
 import Image from "next/image"
-import cloud2 from "../../public/images/cloud2.png"
 import { Project } from 'public/myData'
 
 
 export default function Card({project}: {project: Project}) {
-    const [darkMode, setDarkMode] = useState(false)
+    // const [darkMode, setDarkMode] = useState(false)
   
     return (
         <div className='relative text-center shadow-lg p-6 pb-16 rounded-xl m-auto my-10 max-w-xs max-h-50 dark:bg-slate-800 hover:scale-110 transition-all'>
