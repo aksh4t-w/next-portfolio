@@ -34,23 +34,23 @@ export default function Home() {
                 <li className='hover:scale-125 transition-all'><BsFillMoonStarsFill className='cursor-pointer text-2xl' onClick={()=>setDarkMode(!darkMode)} /></li>
               }
               <li className='hover:scale-110 transition-all'>
-                <a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href={"/Resume_2.pdf"} target="_blank">Resume</a>
+                <a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href={"/Resume_2.pdf"} target="_blank" rel="noreferrer">Resume</a>
               </li>
             </ul>
           </nav>
           <div className='text-center p-10'>
             <h2 className='text-5xl py-2 text-teal-600 font-bold'>Akshat Wagadre</h2>
             <h3 className='text-2xl py-4 dark:text-gray-300 font-bold'>Software Developer</h3>
-            <p className='text-lg py-4 leading-8 text-gray-800 dark:text-gray-400'>I'm a curious software developer with a strong passion for the field. I love exploring and creating!</p>
+            <p className='text-lg py-4 leading-8 text-gray-800 dark:text-gray-400'>I&apos;m a curious software developer with a strong passion for the field. I love exploring and creating!</p>
           </div>
 
 
         {/* ******************* Links ********************* */}
           <div className='text-5xl flex justify-center gap-12 lg:gap-16 py-3 text-gray-500'>
-            <a className="hover:scale-150 transition-all" href="https://github.com/aksh4t-w" target="_blank"><AiFillGithub/></a>
-            <a className="hover:scale-150 transition-all" href="https://www.linkedin.com/in/akshat-w/" target="_blank"><AiFillLinkedin/></a>
-            <a className="hover:scale-150 transition-all" href="https://www.youtube.com/channel/UCRCtuNqoxPBYqOgwb4rPSXw" target="_blank"><AiFillYoutube/></a>
-            <a className="hover:scale-150 transition-all" href="https://www.instagram.com/akshat.w/" target="_blank"><AiFillInstagram/></a>
+            <a className="hover:scale-150 transition-all" href="https://github.com/aksh4t-w" target="_blank" rel="noreferrer"><AiFillGithub/></a>
+            <a className="hover:scale-150 transition-all" href="https://www.linkedin.com/in/akshat-w/" target="_blank" rel="noreferrer"><AiFillLinkedin/></a>
+            <a className="hover:scale-150 transition-all" href="https://www.youtube.com/channel/UCRCtuNqoxPBYqOgwb4rPSXw" target="_blank" rel="noreferrer"><AiFillYoutube/></a>
+            <a className="hover:scale-150 transition-all" href="https://www.instagram.com/akshat.w/" target="_blank" rel="noreferrer"><AiFillInstagram/></a>
           </div>
           <div className='relative mx-auto mt-10 mb-10 bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 lg:mt-20 overflow-hidden'>
             <Image src={avatar} alt="3D avatar of the author" fill objectFit="cover"/>
@@ -61,8 +61,8 @@ export default function Home() {
         <section className='mt-5'>
           <h2 className="mb-3 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Skills</h2>
           <div className='w-full grid grid-cols-2 lg:flex flex-wrap lg:gap-10 justify-center lg:w-4/6 lg:m-auto'>
-            {skills.map((skill) => (
-              <SkillCard skill = {skill}/>
+            {skills.map((skill, index) => (
+              <SkillCard skill = {skill} key={index}/>
             ))}
           </div>
         </section>
@@ -72,8 +72,8 @@ export default function Home() {
           {/* <h3 className='text-3xl py-1'></h3> */}
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Some of my projects</h2>
           <div className='lg:flex flex-wrap gap-10 justify-center w-4/6 m-auto'>
-            {projects.map((project) => (
-              <Card project = {project}/>
+            {projects.map((project, index) => (
+              <Card project = {project} key={index}/>
             ))}
           </div>
         </section>
