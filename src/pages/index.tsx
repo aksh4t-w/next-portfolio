@@ -53,7 +53,7 @@ export default function Home() {
             <a className="hover:scale-150 transition-all" href="https://www.instagram.com/akshat.w/" target="_blank" rel="noreferrer"><AiFillInstagram/></a>
           </div>
           <div className='relative mx-auto mt-10 mb-10 bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 lg:mt-20 overflow-hidden'>
-            <Image src={avatar} alt="3D avatar of the author" fill objectFit="cover"/>
+            <Image src={avatar} alt="3D avatar of the author" fill style={{objectFit:"cover"}}/>
           </div>
         </section>
 
