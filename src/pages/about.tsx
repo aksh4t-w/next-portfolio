@@ -17,9 +17,9 @@ const About = () => {
       <div className="">
         <p>
           I am a Software Developer located in Chicago. I am
-          currently pursuing my Master's in Computer Science at The University
+          currently pursuing my Master&apos;s in Computer Science at The University
           of Illinois, Chicago. With a passion to develop excellent softwares and web apps and
-          to grow my skill set, I'm looking for full time jobs as a
+          to grow my skill set, I$&apos;m looking for full time jobs as a
           Full-Stack/Software developer.
         </p>
 
