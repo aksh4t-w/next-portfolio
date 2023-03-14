@@ -9,6 +9,7 @@ import {projects, skills} from "../../public/myData"
 import Contact from './contact'
 import Navbar from './navbar'
 import About from './about'
+import Test from './test'
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState<Boolean>(true)
@@ -42,8 +43,10 @@ export default function Home() {
             <a className="hover:scale-150 transition-all" href="https://www.youtube.com/channel/UCRCtuNqoxPBYqOgwb4rPSXw" target="_blank" rel="noreferrer"><AiFillYoutube/></a>
             <a className="hover:scale-150 transition-all" href="https://www.instagram.com/akshat.w/" target="_blank" rel="noreferrer"><AiFillInstagram/></a>
           </div>
-          <div className='mx-auto mt-10 mb-10 bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 lg:mt-20 overflow-hidden'>
-            <Image className='z-0' src={avatar} alt="3D avatar of the author" style={{objectFit:"cover"}}/>
+          <div className='relative mx-auto mt-10 mb-10 rounded-full w-80 h-80 lg:mt-20 overflow-hidden'>
+            <div className="absolute top-0 w-80 h-80 bg-gradient-to-b from-teal-500 to-pink-600 rounded-full filter blur-sm animate-blob">
+            </div>
+            <Image className='absolute -top-1' src={avatar} alt="3D avatar of the author" style={{objectFit:"cover"}}/>
           </div>
         </section>
 
@@ -76,6 +79,9 @@ export default function Home() {
         
         {/* ******************* Contact ********************* */}
         <Contact />
+
+      
+        {/* <Test /> */}
       </main>
     </div>
   )
