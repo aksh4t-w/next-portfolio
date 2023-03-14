@@ -20,8 +20,8 @@ const Navbar = ({darkMode, setDarkMode}: setPropsType) => {
   })
   
   return (
-    <nav className='fixed z-10 w-screen p-6 lg:p-10 flex justify-between bg-white dark:bg-gray-900 lg:bg-transparent dark:bg-transparent'>
-      <h1 className={`text-xl font-burtons dark:text-gray-300`}>{'{Developed by Akshat}'}</h1>
+    <nav className='fixed z-10 w-[97vw] p-3 lg:p-10 flex justify-between bg-white dark:bg-gray-900 lg:bg-transparent dark:lg:bg-transparent'>
+      <h1 className={`text-base lg:text-xl font-burtons dark:text-gray-300`}>{'{Developed by Akshat}'}</h1>
       <ul className='hidden md:flex md:items-center'>
         {darkMode ? 
         <li className='hover:scale-125 transition-all'><BsFillSunFill className='cursor-pointer text-2xl text-cyan-50' onClick={()=>setDarkMode(!darkMode)} /></li>

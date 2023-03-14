@@ -5,8 +5,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import { IconButton } from "@mui/material";
 
 const Contact = () => {
-  // const [name, setName] = useState("");
-  // const [subject, setSubject] = useState("");
+
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
@@ -29,10 +28,8 @@ const Contact = () => {
           window.alert("Error sending...");
           console.log(error.text);
         }
-      );
+      )
 
-    // setName("");
-    // setSubject("");
     setEmail("");
     setMessage("");
   };

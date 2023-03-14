@@ -9,7 +9,7 @@ module.exports = {
       },
 
       animation: {
-        blob: "blob 7s ease-in-out infinite",
+        blob: "blob 5s ease-in-out infinite",
         "fade-in-down": "fade-in-down 0.5s ease-out",
       },
 
@@ -22,7 +22,7 @@ module.exports = {
             transform: "scale(1.1)",
           },
           "66%": {
-            transform: "scale(0.9)",
+            transform: "scale(1.1)",
           },
           "100%": {
             transform: "scale(1)",
