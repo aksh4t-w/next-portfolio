@@ -20,7 +20,7 @@ const Navbar = ({darkMode, setDarkMode}: setPropsType) => {
   })
   
   return (
-    <nav className='fixed z-10 w-[97vw] p-3 lg:p-10 flex justify-between bg-white dark:bg-gray-900 lg:bg-transparent dark:lg:bg-transparent'>
+    <nav className='fixed z-10 w-[97vw] p-3 lg:p-10 flex justify-between bg-white dark:bg-gray-900 lg:bg-transparent dark:lg:bg-transparent opacity-90'>
       <h1 className={`text-base lg:text-xl font-burtons dark:text-gray-300`}>{'{Developed by Akshat}'}</h1>
       <ul className='hidden md:flex md:items-center'>
         {darkMode ? 
@@ -29,7 +29,7 @@ const Navbar = ({darkMode, setDarkMode}: setPropsType) => {
         <li className='hover:scale-125 transition-all'><BsFillMoonStarsFill className='cursor-pointer text-2xl' onClick={()=>setDarkMode(!darkMode)} /></li>
         }
         <li className='hover:scale-110 transition-all'>
-          <a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href={"/Resume_2.pdf"} target="_blank" rel="noreferrer">Resume</a>
+          <a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8 border-2 border-pink-500' href={"/Resume_2.pdf"} target="_blank" rel="noreferrer">Resume</a>
         </li>
       </ul>
       {/* bg-[#0a192f] */}

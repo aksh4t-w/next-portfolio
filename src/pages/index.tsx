@@ -80,6 +80,9 @@ export default function Home() {
         {/* ******************* Contact ********************* */}
         <Contact />
 
+        <footer className='text-center text-gray-500 dark:text-gray-400 h-10'>
+          <p className="mt-4">© 2023 Akshat Wagadre</p>
+        </footer>
       
         {/* <Test /> */}
       </main>
